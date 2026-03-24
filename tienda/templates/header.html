@@ -1,0 +1,38 @@
+{% load static %}
+
+<div class="header-wrapper fixed-top">
+
+  <nav class="navbar custom">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"> DogStore
+        <img src="{% static 'img/navbar.png' %}" 
+             alt="Logo"  
+             height="55">
+      </a>
+
+      <a class="navbar-brand text-center" href="#">
+        <h1>Todo para tu mascota</h1>
+      </a>
+
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" href="#">Home</a>
+          <a class="nav-link" href="#">Features</a>
+          <a class="nav-link" href="#">Pricing</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="top-bar text-center py-2">
+    <div class="scroll-text">
+    🚚 Envíos gratis dentro de la RM | 🐶 25% descuento en tu tercer juguete
+  </div>
+
+</div>

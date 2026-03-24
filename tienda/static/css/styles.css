@@ -1,0 +1,189 @@
+/*root colors
+#B5D6B2 green
+#53131E café
+#5A464C chocolate
+#FFFACC lemon
+#FFEFBD vainilla
+*/
+.custom{
+    background-color: #FFEFBD;
+}
+h2{
+  font-family: "Kavoon", serif;
+  font-weight: 400;
+  color:#5A464C;
+}
+.navbar{
+    font-family: "Kavoon", serif;
+    color: #53131E;
+    text-align: center;
+}
+.navbar-brand{
+    color: #53131E;
+}
+
+.header-wrapper {
+    width: 100%;
+    z-index: 1030; 
+}
+body {
+    padding-top: 130px;
+    background-image: url("../img/fondo.png");
+    background-size: cover;       /* cubre toda la pantalla */
+    background-position: center;  /* centrada */
+    background-repeat: no-repeat; /* no se repite */
+    background-attachment: fixed; /* efecto fijo al hacer scroll */
+}
+.card {
+    border: 2px solid #5A464C
+}
+.card-title{
+    font-family: "Kavoon", serif;
+    color: #53131E;
+}
+.top-bar {
+    background-color:#5A464C;
+    color: #FFFACC;
+    font-size: 0.9rem;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.scroll-text {
+    display: inline-block;
+    padding-left: 100%;
+    animation: scroll-left 12s linear infinite;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+.carousel-wrapper {
+    max-width: 800px;   /* cambia a 700px si lo quieres más pequeño */
+    margin: 40px auto;  /* centrado + espacio arriba/abajo */
+    padding: 0 20px;    /* espacio lateral */
+}
+
+.carousel-item {
+    padding: 40px 0;
+}
+
+.carousel-item img {
+     aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+.btn-primary {
+    background-color: #53131E !important;
+    border-color: #53131E !important;
+}
+
+.btn-primary:hover {
+    background-color: #B5D6B2 !important;
+    border-color: #3d0e16 !important;
+}
+.reviews-section {
+    background-color:#B5D6B2;
+}
+
+.review-card {
+    background: #FFEFBD;
+    transition: 0.3s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+}
+
+.review-img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.rating {
+    font-size: 20px;
+    color: #ffc107;
+}
+
+.review-text {
+    font-style: italic;
+    color: #53131E;
+}
+/* ===== Carrusel margen lateral ===== */
+.carousel-container {
+    max-width: 1100px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+/* ===== Ajuste tamaño imagen carrusel ===== */
+.carousel-item img {
+    max-height: 380px;
+    object-fit: cover;
+}
+
+/* ===== Cards más pequeñas ===== */
+.card {
+    max-width: 250px;
+    margin: auto;
+    transition: 0.3s ease;
+}
+.card {
+    border: 1px solid #e5e5e5; /* borde suave */
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(83, 19, 30, 0.15);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    border-color: #53131E; /* tu color principal */
+    box-shadow: 0 12px 30px rgba(83, 19, 30, 0.15);
+    transform: translateY(-6px);
+}
+
+/* ===== Espacio entre cards y reviews ===== */
+.reviews-section {
+    margin-top: 80px;
+}
+
+/* ===== Review cards ===== */
+.review-card {
+    transition: 0.3s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-6px);
+}
+/* boton */
+.floating-contact-btn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 65px;
+    height: 65px;
+    background-color: white; /* fondo del botón */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.floating-contact-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+}
+
+.contact-icon {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
